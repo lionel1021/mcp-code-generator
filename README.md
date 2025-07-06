@@ -75,58 +75,51 @@
 - **Deployment**: Cloudflare Pages
 - **Development**: Advanced MCP development tools
 
-## 🚀 Quick Start
+## 🚀 Quick Start (30 seconds)
+
+### 🎯 Choose Your Experience
+
+**🎮 Instant Demo (No Configuration)**
+```bash
+git clone https://github.com/lionel1021/mcp-code-generator.git
+cd mcp-code-generator
+npm install && npm run demo
+```
+*Perfect for trying out features immediately*
+
+**🔒 Secure Development (Recommended)**
+```bash
+git clone https://github.com/lionel1021/mcp-code-generator.git
+cd mcp-code-generator
+npm install && npm run secure-start
+```
+*Auto-configures secure environment with temporary keys*
+
+**🏭 Production Setup (Advanced)**
+```bash
+git clone https://github.com/lionel1021/mcp-code-generator.git
+cd mcp-code-generator
+npm install && npm run production-setup
+```
+*Full configuration with your own API keys*
 
 ### 📋 Prerequisites
 - **Node.js** 18+ ([Download](https://nodejs.org/))
 - **npm** or **yarn** package manager
-- **Git** for version control
-
-### 🔧 Installation
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/lionel1021/mcp-code-generator.git
-cd mcp-code-generator
-
-# 2. Install dependencies
-npm install
-# or
-yarn install
-
-# 3. Set up environment variables
-cp .env.example .env.local
-
-# 4. Configure your .env.local file
-# Add your API keys and configuration
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-UPSTASH_REDIS_REST_URL=your_redis_url
-UPSTASH_REDIS_REST_TOKEN=your_redis_token
-
-# 5. Start the development server
-npm run dev
-```
 
 ### 🌐 Access the Platform
 
-Open your browser and navigate to:
+After running any of the above commands, open:
 ```
 http://localhost:3000
 ```
 
-### 🎮 Try the Demo
+### 🔐 Security Features
 
-```bash
-# Interactive AI code generation demo
-node mcp/demo-intelligent-codegen.js
-
-# Check MCP server status
-npm run mcp:status
-
-# Start MCP development servers
-npm run mcp:start
-```
+- **🛡️ Auto Security Checks**: Built-in runtime security validation
+- **⏰ Time-Limited Demo Keys**: Temporary credentials expire in 24h
+- **🔒 Production Safeguards**: Prevents demo config in production
+- **📊 Security Monitoring**: Real-time security status tracking
 
 ## 🤖 MCP AI Code Generation
 
