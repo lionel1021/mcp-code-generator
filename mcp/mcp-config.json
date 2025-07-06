@@ -1,0 +1,109 @@
+{
+  "mcpServers": {
+    "lighting-basic-server": {
+      "command": "node",
+      "args": ["./mcp/server.js"],
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "capabilities": [
+        "database_operations",
+        "migration_management", 
+        "query_optimization",
+        "performance_analysis"
+      ],
+      "description": "LightingPro基础MCP服务器 - 数据库操作和分析"
+    },
+    "lighting-smart-codegen": {
+      "command": "node", 
+      "args": ["./mcp/smart-codegen.js"],
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "capabilities": [
+        "code_generation",
+        "codebase_analysis",
+        "template_rendering",
+        "pattern_recognition"
+      ],
+      "description": "智能代码生成器 - 基础模板和模式识别"
+    },
+    "lighting-enhanced-codegen-pro": {
+      "command": "node",
+      "args": ["./mcp/enhanced-codegen-pro.js"],
+      "env": {
+        "NODE_ENV": "development",
+        "AI_ENHANCED": "true"
+      },
+      "capabilities": [
+        "ai_code_analysis",
+        "intelligent_generation", 
+        "code_refactoring",
+        "quality_optimization",
+        "design_patterns",
+        "performance_optimization"
+      ],
+      "description": "AI增强代码生成器专业版 - 智能分析、重构和优化",
+      "priority": "high"
+    }
+  },
+  "global_config": {
+    "timeout": 30000,
+    "max_retries": 3,
+    "log_level": "info",
+    "cache_enabled": true,
+    "cache_ttl": 3600
+  },
+  "lighting_project_config": {
+    "project_root": "./",
+    "framework": "next.js",
+    "language": "typescript", 
+    "styling": "tailwindcss",
+    "database": "supabase",
+    "architecture": "component-based",
+    "conventions": {
+      "component_naming": "PascalCase",
+      "file_naming": "kebab-case",
+      "hook_prefix": "use",
+      "type_suffix": "Type",
+      "interface_suffix": "Props"
+    },
+    "quality_standards": {
+      "min_type_coverage": 85,
+      "max_complexity": 15,
+      "min_test_coverage": 70,
+      "accessibility_level": "AA"
+    },
+    "performance_targets": {
+      "bundle_size_limit": "500kb",
+      "first_paint": "1.5s",
+      "largest_contentful_paint": "2.5s",
+      "cumulative_layout_shift": "0.1"
+    }
+  },
+  "intelligent_features": {
+    "auto_pattern_detection": true,
+    "smart_template_selection": true,
+    "quality_auto_optimization": true,
+    "performance_monitoring": true,
+    "security_scanning": true,
+    "accessibility_checking": true
+  },
+  "integrations": {
+    "vscode": {
+      "enabled": true,
+      "auto_suggestions": true,
+      "inline_analysis": true
+    },
+    "github": {
+      "enabled": true,
+      "auto_pr_analysis": true,
+      "code_review_assistance": true
+    },
+    "deployment": {
+      "auto_optimization": true,
+      "bundle_analysis": true,
+      "performance_monitoring": true
+    }
+  }
+}

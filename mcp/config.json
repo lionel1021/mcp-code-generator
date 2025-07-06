@@ -1,0 +1,91 @@
+{
+  "name": "LightingPro MCP Server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server for LightingPro development enhancement",
+  "server": {
+    "host": "localhost",
+    "port": 3001,
+    "protocol": "ws"
+  },
+  "tools": {
+    "database": {
+      "enabled": true,
+      "features": [
+        "migration_management",
+        "query_optimization",
+        "performance_analysis",
+        "schema_validation"
+      ]
+    },
+    "performance": {
+      "enabled": true,
+      "features": [
+        "api_monitoring",
+        "database_profiling",
+        "cache_analysis",
+        "real_time_metrics"
+      ]
+    },
+    "code_generation": {
+      "enabled": true,
+      "features": [
+        "api_routes",
+        "database_functions",
+        "react_components",
+        "test_files"
+      ]
+    },
+    "deployment": {
+      "enabled": true,
+      "features": [
+        "readiness_checks",
+        "environment_validation",
+        "performance_benchmarks",
+        "security_audits"
+      ]
+    }
+  },
+  "integrations": {
+    "supabase": {
+      "enabled": true,
+      "auto_connect": true,
+      "features": [
+        "direct_query",
+        "migration_sync",
+        "real_time_monitoring"
+      ]
+    },
+    "nextjs": {
+      "enabled": true,
+      "features": [
+        "api_route_generation",
+        "component_scaffolding",
+        "performance_optimization"
+      ]
+    },
+    "cloudflare": {
+      "enabled": true,
+      "features": [
+        "deployment_automation",
+        "edge_cache_management",
+        "performance_monitoring"
+      ]
+    }
+  },
+  "security": {
+    "authentication": false,
+    "rate_limiting": {
+      "enabled": true,
+      "requests_per_minute": 100
+    },
+    "allowed_origins": [
+      "localhost",
+      "127.0.0.1"
+    ]
+  },
+  "logging": {
+    "level": "info",
+    "file": "./logs/mcp-server.log",
+    "console": true
+  }
+}
