@@ -1,15 +1,70 @@
 # 🤖 MCP AI-Enhanced Code Generator
 
-A powerful Model Context Protocol (MCP) based AI code generation platform with intelligent analysis, optimization, and development tools.
+<div align="center">
 
-## ✨ Features
+[![GitHub stars](https://img.shields.io/github/stars/lionel1021/mcp-code-generator?style=social)](https://github.com/lionel1021/mcp-code-generator/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/lionel1021/mcp-code-generator?style=social)](https://github.com/lionel1021/mcp-code-generator/network/members)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
+[![MCP](https://img.shields.io/badge/MCP-Protocol-green)](https://github.com/modelcontextprotocol)
 
-- **🧠 AI-Powered Code Generation**: Intelligent component and API generation
-- **🔍 Smart Code Analysis**: Automated quality assessment and optimization
-- **🎨 Pattern Recognition**: Automatic design pattern application  
-- **⚡ Performance Optimization**: Real-time code performance enhancement
-- **🛠️ MCP Integration**: Advanced Model Context Protocol tools
-- **🚀 Next.js 15 Platform**: Modern React-based development environment
+**🚀 Revolutionary AI-powered code generation platform using Model Context Protocol (MCP)**
+
+*Boost your development productivity with intelligent React/TypeScript component generation*
+
+</div>
+
+---
+
+## 🎯 What is MCP AI-Enhanced Code Generator?
+
+**MCP AI-Enhanced Code Generator** is a cutting-edge development platform that leverages the power of **Model Context Protocol (MCP)** to revolutionize how developers create, analyze, and optimize code. Whether you're building React components, optimizing performance, or refactoring legacy code, our AI-powered tools provide intelligent assistance every step of the way.
+
+### 🌟 Why Choose Our Platform?
+
+- **🧠 AI-First Approach**: Advanced AI models understand your codebase context
+- **⚡ 10x Faster Development**: Generate production-ready components in seconds
+- **🔍 Intelligent Analysis**: Automated code quality assessment and optimization
+- **🎨 Pattern Recognition**: Smart application of design patterns and best practices
+- **🚀 Modern Tech Stack**: Built with Next.js 15, TypeScript, and cutting-edge tools
+
+## ✨ Core Features
+
+<table>
+<tr>
+<td width="50%">
+
+### 🧠 AI-Powered Code Generation
+- **React Component Generation**: Create complex components with AI assistance
+- **API Route Generation**: Smart backend endpoint creation
+- **TypeScript Integration**: Full type safety and IntelliSense support
+- **Custom Hook Generation**: Reusable logic patterns
+
+### 🔍 Intelligent Code Analysis
+- **Quality Assessment**: Automated code review with actionable feedback
+- **Performance Profiling**: Real-time optimization suggestions
+- **Security Scanning**: Vulnerability detection and mitigation
+- **Best Practice Enforcement**: Industry-standard code patterns
+
+</td>
+<td width="50%">
+
+### 🎨 Smart Development Tools
+- **Pattern Recognition**: Automatic design pattern application
+- **Code Refactoring**: Intelligent code restructuring
+- **Documentation Generation**: Auto-generated API docs
+- **Testing Automation**: Smart test case generation
+
+### ⚡ Performance Optimization
+- **Bundle Analysis**: Webpack bundle optimization
+- **Caching Strategies**: Redis and browser caching
+- **Database Optimization**: Query performance tuning
+- **CDN Integration**: Global content delivery
+
+</td>
+</tr>
+</table>
 
 ## 🏗️ Tech Stack
 
@@ -22,29 +77,56 @@ A powerful Model Context Protocol (MCP) based AI code generation platform with i
 
 ## 🚀 Quick Start
 
-### Prerequisites
-- Node.js 18+
-- npm or yarn
+### 📋 Prerequisites
+- **Node.js** 18+ ([Download](https://nodejs.org/))
+- **npm** or **yarn** package manager
+- **Git** for version control
 
-### Installation
+### 🔧 Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/mcp-ai-enhanced-codegen.git
-cd mcp-ai-enhanced-codegen
+# 1. Clone the repository
+git clone https://github.com/lionel1021/mcp-code-generator.git
+cd mcp-code-generator
 
-# Install dependencies
+# 2. Install dependencies
 npm install
+# or
+yarn install
 
-# Set up environment variables
+# 3. Set up environment variables
 cp .env.example .env.local
-# Edit .env.local with your configuration
 
-# Start the development server
+# 4. Configure your .env.local file
+# Add your API keys and configuration
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+UPSTASH_REDIS_REST_URL=your_redis_url
+UPSTASH_REDIS_REST_TOKEN=your_redis_token
+
+# 5. Start the development server
 npm run dev
 ```
 
-Visit `http://localhost:3000` to access the platform.
+### 🌐 Access the Platform
+
+Open your browser and navigate to:
+```
+http://localhost:3000
+```
+
+### 🎮 Try the Demo
+
+```bash
+# Interactive AI code generation demo
+node mcp/demo-intelligent-codegen.js
+
+# Check MCP server status
+npm run mcp:status
+
+# Start MCP development servers
+npm run mcp:start
+```
 
 ## 🤖 MCP AI Code Generation
 
@@ -117,23 +199,85 @@ The platform uses a sophisticated MCP-based architecture:
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+We welcome contributions from the community! Here's how you can help:
+
+### 🌟 Ways to Contribute
+
+- **🐛 Report Bugs**: Found an issue? [Create a bug report](https://github.com/lionel1021/mcp-code-generator/issues/new)
+- **💡 Suggest Features**: Have an idea? [Request a feature](https://github.com/lionel1021/mcp-code-generator/issues/new)
+- **📖 Improve Documentation**: Help make our docs better
+- **🔧 Submit Code**: Fix bugs or add new features
+
+### 🚀 Development Workflow
+
+1. **Fork** the repository
+2. **Clone** your fork locally
+3. **Create** a feature branch (`git checkout -b feature/AmazingFeature`)
+4. **Make** your changes
+5. **Test** your changes thoroughly
+6. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
+7. **Push** to the branch (`git push origin feature/AmazingFeature`)
+8. **Open** a Pull Request
+
+### 📋 Code Guidelines
+
+- Follow existing code style and conventions
+- Write meaningful commit messages
+- Add tests for new features
+- Update documentation as needed
+- Ensure all tests pass before submitting
+
+### 🏷️ Good First Issues
+
+New to the project? Look for issues labeled [`good first issue`](https://github.com/lionel1021/mcp-code-generator/labels/good%20first%20issue) to get started!
+
+## 📈 Project Stats
+
+<div align="center">
+
+[![GitHub stars](https://img.shields.io/github/stars/lionel1021/mcp-code-generator?style=for-the-badge&logo=github)](https://github.com/lionel1021/mcp-code-generator/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/lionel1021/mcp-code-generator?style=for-the-badge&logo=github)](https://github.com/lionel1021/mcp-code-generator/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/lionel1021/mcp-code-generator?style=for-the-badge&logo=github)](https://github.com/lionel1021/mcp-code-generator/issues)
+[![GitHub license](https://img.shields.io/github/license/lionel1021/mcp-code-generator?style=for-the-badge)](LICENSE)
+
+</div>
+
+## 📱 Connect & Support
+
+<div align="center">
+
+**Love this project? Show your support!**
+
+[![⭐ Star this project](https://img.shields.io/badge/⭐-Star%20this%20project-yellow?style=for-the-badge)](https://github.com/lionel1021/mcp-code-generator/stargazers)
+[![🐛 Report Issues](https://img.shields.io/badge/🐛-Report%20Issues-red?style=for-the-badge)](https://github.com/lionel1021/mcp-code-generator/issues)
+[![💡 Request Features](https://img.shields.io/badge/💡-Request%20Features-blue?style=for-the-badge)](https://github.com/lionel1021/mcp-code-generator/issues)
+[![🤝 Contribute](https://img.shields.io/badge/🤝-Contribute-green?style=for-the-badge)](https://github.com/lionel1021/mcp-code-generator/pulls)
+
+</div>
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
-- Built with Next.js and the MCP protocol
-- Enhanced with AI-powered code generation
-- Styled with Tailwind CSS
-- Deployed on Cloudflare Pages
+- **Next.js Team** for the amazing React framework
+- **Model Context Protocol** for revolutionizing AI development
+- **Supabase** for providing excellent backend services
+- **Tailwind CSS** for beautiful and responsive styling
+- **Cloudflare** for fast and reliable deployment
+- **Open Source Community** for continuous inspiration
 
 ---
 
-⭐ If you find this MCP AI code generation platform helpful, please give it a star!
+<div align="center">
+
+**⭐ If you find this MCP AI code generation platform helpful, please give it a star! ⭐**
+
+*Built with ❤️ for the developer community*
+
+[![Made with TypeScript](https://img.shields.io/badge/Made%20with-TypeScript-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Powered by Next.js](https://img.shields.io/badge/Powered%20by-Next.js-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![AI Enhanced](https://img.shields.io/badge/AI-Enhanced-brightgreen?style=flat-square&logo=openai)](https://github.com/lionel1021/mcp-code-generator)
+
+</div>
