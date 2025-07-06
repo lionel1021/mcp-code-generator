@@ -1,0 +1,213 @@
+# =====================================================
+# MCP AI-Enhanced Code Generator - .gitignore
+# =====================================================
+
+# Environment Variables (CRITICAL - Never commit these!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.redis
+.env.supabase
+
+# API Keys and Secrets
+*.key
+*.pem
+*.crt
+secrets.json
+credentials.json
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Production
+/build
+/dist
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# Snowpack dependency directory
+web_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
+
+# Logs
+logs
+*.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Redis
+dump.rdb
+appendonly.aof
+redis-server.log
+
+# MCP Logs
+mcp/logs/*.log
+mcp/temp/
+mcp/cache/
+
+# Performance Testing
+tests/performance/results/
+k6-results/
+
+# Supabase
+supabase/.branches
+supabase/.temp
+
+# Docker
+Dockerfile.dev
+docker-compose.override.yml
+
+# Backup files
+*.backup
+*.bak
+*.tmp
+
+# Custom application files
+local-config.json
+production-secrets.json
+development-keys.json
+
+# SSL Certificates
+ssl/
+certificates/
+
+# Monitoring and Analytics
+.sentry-cli-config
+newrelic.js
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.npmrc
+
+# Testing
+/coverage
+/.nyc_output
+test-results/
+playwright-report/
