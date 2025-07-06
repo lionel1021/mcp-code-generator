@@ -19,12 +19,39 @@ export const ShareProject: React.FC<ShareProjectProps> = ({
 
   const projectUrl = 'https://github.com/lionel1021/mcp-code-generator';
   
-  const defaultMessage = `🚀 刚刚用 MCP AI Code Generator 生成了一个完整的React组件，效率提升10倍！
+  const messages = [
+    `🙋‍♂️ 再也不用手写重复的React组件了！
 
-试试这个AI代码生成工具：
+刚发现一个AI工具，30秒生成生产级代码，效率暴增100倍！
+
 ${projectUrl}
 
-#AI #React #开发工具 #NextJS #TypeScript`;
+谁还在复制粘贴代码？🤔 #AI #React #开发工具`,
+
+    `💡 我受够了写第100遍按钮组件...
+
+所以找到了这个AI神器：
+• 输入需求 → 30秒生成完整组件
+• TypeScript + 最佳实践
+• 再也不用重复劳动！
+
+${projectUrl}
+
+#效率工具 #React #AI #TypeScript`,
+
+    `🚀 开发效率提升指南：
+
+传统方式：30分钟写一个组件 😫
+AI方式：30秒搞定 ✨
+
+刚试了这个工具，真的香！
+
+${projectUrl}
+
+有人和我一样讨厌重复编码吗？ #AI #开发工具 #React`
+  ];
+
+  const defaultMessage = messages[Math.floor(Math.random() * messages.length)];
 
   const shareText = customMessage || defaultMessage;
 
