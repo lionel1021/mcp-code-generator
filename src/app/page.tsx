@@ -1,7 +1,10 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Lightbulb, Zap, Target, Star } from "lucide-react";
+import { Bot, Zap, Target, Star, Code, Cpu } from "lucide-react";
+import ShareProject from "@/components/ShareProject";
+import AchievementSystem from "@/components/AchievementSystem";
+import FloatingShareButton from "@/components/FloatingShareButton";
 
 export default function Home() {
   return (
@@ -11,16 +14,21 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-2">
-              <Lightbulb className="h-8 w-8 text-blue-600" />
-              <h1 className="text-xl font-bold text-gray-900">LightingPro</h1>
+              <Bot className="h-8 w-8 text-blue-600" />
+              <h1 className="text-xl font-bold text-gray-900">MCP AI Code Generator</h1>
             </div>
             <div className="flex items-center gap-4">
-              <Link href="/search">
-                <Button variant="outline">搜索产品</Button>
-              </Link>
-              <Link href="/auth">
-                <Button variant="outline">Sign In</Button>
-              </Link>
+              <ShareProject trigger="button" className="hidden sm:flex" />
+              <a
+                href="https://github.com/lionel1021/mcp-code-generator"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" className="flex items-center gap-2">
+                  <Star className="h-4 w-4" />
+                  GitHub
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -30,25 +38,24 @@ export default function Home() {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Find Perfect Lighting for Your Space
+            🤖 AI-Powered Code Generation Platform
           </h2>
           <p className="text-xl text-gray-600 mb-8">
-            Get personalized lighting recommendations based on your room, style, and budget. 
-            Our AI-powered tool helps you make the right choice every time.
+            Generate production-ready React components 10x faster with intelligent AI assistance. 
+            Built on Model Context Protocol (MCP) for next-generation development workflow.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/questionnaire">
+            <a
+              href="https://github.com/lionel1021/mcp-code-generator"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                <Zap className="mr-2 h-5 w-5" />
-                Start Lighting Quiz
+                <Code className="mr-2 h-5 w-5" />
+                View on GitHub
               </Button>
-            </Link>
-            <Link href="/search">
-              <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
-                <Target className="mr-2 h-5 w-5" />
-                Browse All Products
-              </Button>
-            </Link>
+            </a>
+            <ShareProject trigger="button" />
           </div>
         </div>
       </section>
@@ -57,25 +64,15 @@ export default function Home() {
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            Why Choose LightingPro?
+            🚀 Why Choose MCP AI Code Generator?
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="text-center">
               <CardHeader>
-                <Target className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <CardTitle>Smart Recommendations</CardTitle>
+                <Bot className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <CardTitle>AI-Powered Generation</CardTitle>
                 <CardDescription>
-                  AI-powered suggestions based on your specific needs, room type, and style preferences
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            
-            <Card className="text-center">
-              <CardHeader>
-                <Star className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <CardTitle>Curated Selection</CardTitle>
-                <CardDescription>
-                  Hand-picked lighting options from top brands with verified reviews and ratings
+                  Generate React components, hooks, and APIs with intelligent AI assistance using Model Context Protocol
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -83,9 +80,19 @@ export default function Home() {
             <Card className="text-center">
               <CardHeader>
                 <Zap className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <CardTitle>Quick & Easy</CardTitle>
+                <CardTitle>10x Development Speed</CardTitle>
                 <CardDescription>
-                  Get personalized recommendations in under 2 minutes with our simple questionnaire
+                  Create production-ready TypeScript components in seconds instead of minutes
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            
+            <Card className="text-center">
+              <CardHeader>
+                <Cpu className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <CardTitle>Smart Code Analysis</CardTitle>
+                <CardDescription>
+                  Automated quality assessment, performance optimization, and best practice enforcement
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -97,33 +104,40 @@ export default function Home() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            How It Works
+            🛠️ How It Works
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <span className="text-blue-600 text-xl font-bold">1</span>
               </div>
-              <h4 className="text-xl font-semibold mb-2">Answer Questions</h4>
-              <p className="text-gray-600">Tell us about your room, style, and budget</p>
+              <h4 className="text-xl font-semibold mb-2">Describe Component</h4>
+              <p className="text-gray-600">Tell the AI what component you need - button, form, modal, etc.</p>
             </div>
             
             <div className="text-center">
               <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <span className="text-blue-600 text-xl font-bold">2</span>
               </div>
-              <h4 className="text-xl font-semibold mb-2">Get Recommendations</h4>
-              <p className="text-gray-600">See personalized lighting options matched to your needs</p>
+              <h4 className="text-xl font-semibold mb-2">AI Generates Code</h4>
+              <p className="text-gray-600">Get production-ready React/TypeScript code with best practices</p>
             </div>
             
             <div className="text-center">
               <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <span className="text-blue-600 text-xl font-bold">3</span>
               </div>
-              <h4 className="text-xl font-semibold mb-2">Shop & Install</h4>
-              <p className="text-gray-600">Purchase from trusted retailers with confidence</p>
+              <h4 className="text-xl font-semibold mb-2">Copy & Deploy</h4>
+              <p className="text-gray-600">Integrate into your project and deploy with confidence</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Achievement System Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <AchievementSystem />
         </div>
       </section>
 
@@ -131,16 +145,24 @@ export default function Home() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-blue-600">
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-3xl font-bold text-white mb-4">
-            Ready to Transform Your Space?
+            🚀 Ready to Supercharge Your Development?
           </h3>
           <p className="text-xl text-blue-100 mb-8">
-            Join thousands of satisfied customers who found their perfect lighting
+            Join the AI revolution and boost your coding productivity by 10x
           </p>
-          <Link href="/questionnaire">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-              Get Started Now
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://github.com/lionel1021/mcp-code-generator"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+                <Star className="mr-2 h-5 w-5" />
+                Star on GitHub
+              </Button>
+            </a>
+            <ShareProject trigger="button" />
+          </div>
         </div>
       </section>
 
@@ -148,14 +170,34 @@ export default function Home() {
       <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Lightbulb className="h-6 w-6" />
-            <span className="text-lg font-semibold">LightingPro</span>
+            <Bot className="h-6 w-6" />
+            <span className="text-lg font-semibold">MCP AI Code Generator</span>
           </div>
-          <p className="text-gray-400">
-            © 2024 LightingPro. All rights reserved.
+          <p className="text-gray-400 mb-6">
+            Revolutionary AI-powered code generation platform built with Model Context Protocol
           </p>
+          <div className="flex justify-center gap-8 text-sm">
+            <a href="https://github.com/lionel1021/mcp-code-generator" className="hover:text-white" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+            <a href="https://github.com/lionel1021/mcp-code-generator/issues" className="hover:text-white" target="_blank" rel="noopener noreferrer">
+              Issues
+            </a>
+            <a href="https://github.com/lionel1021/mcp-code-generator/blob/main/CONTRIBUTING.md" className="hover:text-white" target="_blank" rel="noopener noreferrer">
+              Contributing
+            </a>
+            <a href="https://github.com/lionel1021/mcp-code-generator/blob/main/ROADMAP.md" className="hover:text-white" target="_blank" rel="noopener noreferrer">
+              Roadmap
+            </a>
+          </div>
+          <div className="mt-8 pt-8 border-t border-gray-800 text-gray-400 text-sm">
+            © 2025 MCP AI Code Generator. MIT License. Built with ❤️ for developers.
+          </div>
         </div>
       </footer>
+
+      {/* Floating Share Button */}
+      <FloatingShareButton />
     </div>
   );
 }

@@ -231,7 +231,7 @@ We welcome contributions from the community! Here's how you can help:
 
 New to the project? Look for issues labeled [`good first issue`](https://github.com/lionel1021/mcp-code-generator/labels/good%20first%20issue) to get started!
 
-## 📈 Project Stats
+## 🏆 成就解锁系统
 
 <div align="center">
 
@@ -239,6 +239,26 @@ New to the project? Look for issues labeled [`good first issue`](https://github.
 [![GitHub forks](https://img.shields.io/github/forks/lionel1021/mcp-code-generator?style=for-the-badge&logo=github)](https://github.com/lionel1021/mcp-code-generator/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/lionel1021/mcp-code-generator?style=for-the-badge&logo=github)](https://github.com/lionel1021/mcp-code-generator/issues)
 [![GitHub license](https://img.shields.io/github/license/lionel1021/mcp-code-generator?style=for-the-badge)](LICENSE)
+
+</div>
+
+### 🎯 Community Milestones & Rewards
+
+Help us reach these milestones and unlock exclusive benefits for the entire community!
+
+| Achievement | Stars Required | Reward | Status |
+|------------|---------------|---------|---------|
+| ⭐ **初露锋芒** | 10 Stars | 项目开发者专属徽章 | 🎉 **解锁!** |
+| 🚀 **小有名气** | 50 Stars | 高级功能演示视频 | 🔄 进行中 |
+| 🏆 **百星成就** | 100 Stars | **VS Code扩展抢先体验** | 🎯 目标 |
+| 👥 **社区热门** | 500 Stars | **贡献者专属群 + 技术交流** | 🔮 未来 |
+| 🎉 **千星里程碑** | 1000 Stars | **优先体验新功能 + 定制化服务** | 🌟 终极目标 |
+
+<div align="center">
+
+**🌟 每一个Star都让我们更接近下一个里程碑！**
+
+[![⭐ 给个Star支持我们](https://img.shields.io/badge/⭐-给个Star支持我们-yellow?style=for-the-badge)](https://github.com/lionel1021/mcp-code-generator/stargazers)
 
 </div>
 
