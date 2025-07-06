@@ -1,7 +1,15 @@
 {
-  "name": "lighting-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "mcp-ai-enhanced-codegen",
+  "version": "1.0.0",
+  "description": "AI-powered code generation platform using Model Context Protocol (MCP)",
+  "keywords": ["mcp", "ai", "code-generation", "next.js", "typescript", "development-tools"],
+  "author": "Developer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/mcp-ai-enhanced-codegen.git"
+  },
+  "private": false,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
