@@ -86,10 +86,9 @@ EXTERNAL_APIS_ENABLED=false
   async startDemo() {
     console.log('🚀 启动演示模式服务器...');
 
-    const child = spawn('npm', ['run', 'dev'], {
+    const child = spawn('npx', ['next', 'dev', '--turbopack'], {
       stdio: 'inherit',
       cwd: this.projectRoot,
-      shell: true,
       env: {
         ...process.env,
         ENV_FILE: '.env.demo'

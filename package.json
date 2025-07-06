@@ -1,8 +1,15 @@
 {
   "name": "mcp-ai-enhanced-codegen",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "AI-powered code generation platform using Model Context Protocol (MCP)",
-  "keywords": ["mcp", "ai", "code-generation", "next.js", "typescript", "development-tools"],
+  "keywords": [
+    "mcp",
+    "ai",
+    "code-generation",
+    "next.js",
+    "typescript",
+    "development-tools"
+  ],
   "author": "Developer",
   "license": "MIT",
   "repository": {
@@ -50,13 +57,13 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
+    "@types/node": "20.19.4",
+    "@types/react": "19.1.8",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
     "tailwindcss": "^4",
-    "typescript": "^5",
+    "typescript": "5.8.3",
     "ws": "^8.18.3"
   }
 }

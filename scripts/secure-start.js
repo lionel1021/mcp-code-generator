@@ -95,10 +95,9 @@ class SecureStart {
   async startDevServer() {
     console.log('🚀 启动开发服务器...\n');
     
-    const child = spawn('npm', ['run', 'dev'], {
+    const child = spawn('npx', ['next', 'dev', '--turbopack'], {
       stdio: 'inherit',
-      cwd: this.projectRoot,
-      shell: true
+      cwd: this.projectRoot
     });
 
     child.on('close', (code) => {
